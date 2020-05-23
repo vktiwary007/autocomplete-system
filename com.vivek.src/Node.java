@@ -1,5 +1,8 @@
-package com.vivek.src;
-
+/**
+ * @author vivek
+ *
+ * Class to create Node for Trie DS
+ */
 class Node{
 
     private Node[] links;
@@ -30,6 +33,12 @@ class Node{
         return this.links[ch-'a']!=null;
     }
     
-    public 
+    public Node getLinks(char ch){
+        return this.links[ch-'a'];
+    }
+
+    public void putNode(char ch, Node node){
+        links[ch-'a'] = node;
+    }
     
 }
